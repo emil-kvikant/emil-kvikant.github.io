@@ -53,6 +53,7 @@ body {
     display: grid;
     grid-template-areas:
         "about about"
+        "interests interests"
         "experience experience"
         "education skills"
         "contact contact";
@@ -65,6 +66,9 @@ body {
 .education-section { grid-area: education; }
 .skills-section { grid-area: skills; }
 .contact-section { grid-area: contact; }
+.interests-section {
+    grid-area: interests;
+}
 
 .grid-item {
     background-color: var(--section-bg);
@@ -435,10 +439,37 @@ h2 {
     text-decoration: underline;
 }
 
+.interest-item {
+    background-color: rgba(74, 144, 226, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.interest-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.interest-link:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.interest-date {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 10px;
+    font-style: italic;
+}
+
 @media (max-width: 968px) {
     .grid-layout {
         grid-template-areas:
             "about"
+            "interests"
             "experience"
             "education"
             "skills"
