@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="profile-section">
+                <div class="profile-image">
+                    <img src="images/profile.jpg" alt="Emil Kvikant" id="profile-pic">
+                </div>
+                <div class="profile-info">
+                    <h1>Emil Kvikant</h1>
+                    <p class="title">Master's in Social Sciences | Chef | Web Developer</p>
+                </div>
+            </div>
+        </header>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="grid-layout">
+            <section id="about" class="grid-item about-section">
+                <h2>About Me</h2>
+                <p>Seeing things through, no matter the task, describes my story thus far. It might be a busy Friday night at Popl, or 4 papers due at the end of the week, or helping the kid that's behind in class, I want to complete every task with a sense of pride and focus.</p>
+            </section>
+
+            <section id="experience" class="grid-item experience-section">
+                <h2>Professional Experience</h2>
+                <div class="experience-item">
+                    <h3>Substitute Teacher</h3>
+                    <p class="company">Grundskolan Norsen, Helsinki</p>
+                    <p class="date">2024 - Present</p>
+                    <p class="description">Teaching various subjects to students aged 7-16, providing personalized support and guidance across different grade levels.</p>
+                </div>
+
+                <div class="experience-group">
+                    <h3>Professional Chef</h3>
+                    <p class="date">2020 - 2024</p>
+                    <p class="description">Started my culinary journey at the prestigious 3-star Michelin restaurant Frantzén, which evolved into a 3.5-year career in fine dining across Scandinavia.</p>
+                    
+                    <div class="restaurant-timeline">
+                        <div class="experience-item">
+                            <p class="company">Elm & Nolla</p>
+                            <p class="date">2024</p>
+                            <p class="location">Helsinki</p>
+                        </div>
+
+                        <div class="experience-item">
+                            <p class="company">Popl (by Noma)</p>
+                            <p class="date">2023</p>
+                            <p class="location">Copenhagen</p>
+                        </div>
+
+                        <div class="experience-item">
+                            <p class="company">Burn&Shine, Younghearts, Wino, Ragu</p>
+                            <p class="date">2021 - 2023</p>
+                            <p class="location">Helsinki</p>
+                        </div>
+
+                        <div class="experience-item">
+                            <p class="company">Frantzén Group</p>
+                            <p class="date">2020 - 2021</p>
+                            <p class="location">Stockholm</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Web Developer</h3>
+                    <p class="company">Northside</p>
+                    <p class="date">2021</p>
+                    <p class="location">Stockholm</p>
+                    <p class="description">Internship focused on marketing design and web development, applying technical skills in a professional environment.</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Paint Manufacturer</h3>
+                    <p class="company">OOO Nor-Maali</p>
+                    <p class="date">2018</p>
+                    <p class="location">Pskov</p>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Intern</h3>
+                    <p class="company">Odgers Berndtson</p>
+                    <p class="date">2017</p>
+                    <p class="location">Helsinki</p>
+                    <p class="description">Internship at a global executive search and leadership advisory firm, gaining insight into corporate recruitment and talent management.</p>
+                </div>
+            </section>
+
+            <section id="education" class="grid-item education-section">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <div class="degree-header">
+                        <h3>Master's in Social Sciences (Politics, Economics, Philosophy)</h3>
+                        <button class="info-button" aria-label="More information">
+                            <i class="fas fa-info-circle"></i>
+                        </button>
+                    </div>
+                    <p class="institution">Higher School of Economics</p>
+                    <p class="location">Moscow</p>
+                    <p class="date">2019 - 2021</p>
+                    <div class="degree-popup">
+                        <div class="popup-content">
+                            <h4>Master's Program Details</h4>
+                            <div class="degree-details">
+                                <p class="thesis"><strong>Thesis:</strong> "Political Applications of Wittgenstein's Conception of Philosophy: The Philosophical Conversation as a Model for Democracy"</p>
+                                <p class="gpa"><strong>GPA:</strong> 8.35/10 (diploma with distinction)</p>
+                                <div class="school-info">
+                                    <p><a href="https://www.hse.ru/en/" target="_blank" class="school-link">Higher School of Economics (HSE)</a> is a leading Russian research university known for its innovative programs and interdisciplinary approach.</p>
+                                    <p>I studied the master's degree in Politics, Economics, and Philosophy (PEP), which integrates these fields to develop analytical and critical skills to address complex challenges for society.</p>
+                                </div>
+                            </div>
+                            <button class="close-popup">Close</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="degree-header">
+                        <h3>Bachelor's degree in Humanities, Philosophy</h3>
+                        <button class="info-button" aria-label="More information">
+                            <i class="fas fa-info-circle"></i>
+                        </button>
+                    </div>
+                    <p class="institution">University of Helsinki</p>
+                    <p class="location">Helsinki</p>
+                    <p class="date">2015 - 2019</p>
+                    <div class="degree-popup">
+                        <div class="popup-content">
+                            <h4>Bachelor's Program Details</h4>
+                            <div class="degree-details">
+                                <p class="gpa"><strong>GPA:</strong> 4/5</p>
+                                <div class="school-info">
+                                    <p><a href="https://www.helsinki.fi/fi" target="_blank" class="school-link">The University of Helsinki</a> is Finland's largest and most prestigious university, offering a bachelor's degree in Philosophy that provides a comprehensive foundation in philosophical thinking, history, and methodology.</p>
+                                </div>
+                            </div>
+                            <button class="close-popup">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="grid-item skills-section">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <ul>
+                            <li>Swedish (Native)</li>
+                            <li>Finnish (Native)</li>
+                            <li>English (Fluent)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Professional Competencies</h3>
+                        <ul>
+                            <li>Critical Thinking & Analysis</li>
+                            <li>High-Stress Performance</li>
+                            <li>Consistent Delivery</li>
+                            <li>Teaching</li>
+                            <li>Culinary Arts</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="grid-item contact-section">
+                <h2>Contact</h2>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> emil.kvikant@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +358 409008330</p>
+                    <p><i class="fas fa-location-dot"></i> Fredrikinkatu 68, 00100 Helsingfors</p>
+                    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/emil-kvikant-773290139/" target="_blank" class="social-link">LinkedIn Profile</a></p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
