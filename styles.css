@@ -345,6 +345,53 @@ section h2:after {
     margin: 15px 0;
 }
 
+/* Chef Experience Layout */
+.chef-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.chef-text {
+    padding-right: 20px;
+}
+
+.chef-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.restaurant-timeline {
+    margin-top: 20px;
+    padding-left: 20px;
+    border-left: 2px solid var(--accent-color);
+}
+
+.restaurant-timeline .experience-item {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.restaurant-timeline .experience-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+@media (max-width: 968px) {
+    .chef-content {
+        grid-template-columns: 1fr;
+    }
+
+    .chef-text {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 0 15px;
