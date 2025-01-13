@@ -180,6 +180,98 @@ section h2:after {
     width: 24px;
 }
 
+/* Education Popup Styles */
+.degree-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.info-button {
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    cursor: pointer;
+    padding: 5px;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.info-button:hover {
+    color: var(--primary-color);
+}
+
+.degree-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.degree-popup.active {
+    display: flex;
+}
+
+.popup-content {
+    background-color: var(--section-bg);
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 90%;
+    position: relative;
+    border: 1px solid var(--border-color);
+}
+
+.popup-content h4 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 1.4em;
+}
+
+.popup-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.close-popup {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-popup:hover {
+    color: var(--primary-color);
+}
+
+.degree-details {
+    margin-top: 20px;
+}
+
+.thesis {
+    font-style: italic;
+    color: var(--secondary-color);
+    margin: 15px 0;
+}
+
+.gpa {
+    color: var(--accent-color);
+    font-weight: 500;
+    margin: 15px 0;
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 0 15px;

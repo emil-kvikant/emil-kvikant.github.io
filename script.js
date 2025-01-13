@@ -44,19 +44,8 @@ document.querySelectorAll('.close-popup').forEach(button => {
 });
 
 // Close popup when clicking outside
-document.querySelectorAll('.degree-popup').forEach(popup => {
-    popup.addEventListener('click', (e) => {
-        if (e.target === popup) {
-            popup.classList.remove('active');
-        }
-    });
-});
-
-// Close popup with Escape key
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-        document.querySelectorAll('.degree-popup.active').forEach(popup => {
-            popup.classList.remove('active');
-        });
+document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('degree-popup')) {
+        e.target.classList.remove('active');
     }
 });
