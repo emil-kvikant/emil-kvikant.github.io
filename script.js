@@ -49,3 +49,41 @@ document.addEventListener('click', (e) => {
         e.target.classList.remove('active');
     }
 });
+
+// Image popup functionality
+const imagePopupTemplate = `
+    <div class="image-popup">
+        <button class="close-image">×</button>
+        <img class="popup-image" src="" alt="Full size image">
+    </div>
+`;
+document.body.insertAdjacentHTML('beforeend', imagePopupTemplate);
+
+const imagePopup = document.querySelector('.image-popup');
+const popupImage = document.querySelector('.popup-image');
+const closeImageButton = document.querySelector('.close-image');
+
+document.querySelectorAll('.chef-image').forEach(image => {
+    image.addEventListener('click', () => {
+        const fullImagePath = image.dataset.full;
+        popupImage.src = fullImagePath;
+        imagePopup.classList.add('active');
+    });
+});
+
+closeImageButton.addEventListener('click', () => {
+    imagePopup.classList.remove('active');
+});
+
+imagePopup.addEventListener('click', (e) => {
+    if (e.target === imagePopup) {
+        imagePopup.classList.remove('active');
+    }
+});
+
+// Close image popup with Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && imagePopup.classList.contains('active')) {
+        imagePopup.classList.remove('active');
+    }
+});
